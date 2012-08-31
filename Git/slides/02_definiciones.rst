@@ -7,13 +7,18 @@ Repositorio
 Copia de trabajo
     La copia de trabajo es la copia local de los ficheros de un repositorio, en un momento del tiempo o revisión específicos.
     
-.. note::
-    Todo el trabajo realizado sobre los ficheros en un repositorio se realiza inicialmente sobre una copia de trabajo, de ahí su nombre. Conceptualmente, es un cajón de arena o sandbox.
+.note:
+        Todo el trabajo realizado sobre los ficheros en un repositorio se realiza inicialmente sobre una copia de trabajo, de ahí su nombre.
+        Conceptualmente, es un cajón de arena o sandbox.
     
 Revisión ("version")
     Versión determinada de la información que se gestiona.
+
 .. note::
-    Hay sistemas que identifican las revisiones con un contador. Hay otros sistemas que identifican las revisiones mediante un código de detección de modificaciones (Ej. Git usa SHA1). A la última versión se le suele identificar de forma especial con el nombre de HEAD. Para poner especial a una revisión concreta se usan los rótulos o tags
+        Hay sistemas que identifican las revisiones con un contador. 
+        Hay otros sistemas que identifican las revisiones mediante un código de detección de modificaciones (Ej. Git usa SHA1). 
+        A la última versión se le suele identificar de forma especial con el nombre de HEAD. 
+        Para poner especial a una revisión concreta se usan los rótulos o tags
     
 Rotular ("tag", "etiqueta" o "rótulo")
     Darle a alguna versión en desarrollo en un momento preciso un nombre común para asegurarse de reencontrar ese estado de desarrollo posteriormente bajo ese nombre.
