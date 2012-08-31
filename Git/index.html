@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>SCV casero</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="/home/diego/.virtualenvs/landslide/src/landstile/src/landslide/themes/default/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="/home/diego/.virtualenvs/landslide/src/landstile/src/landslide/themes/default/css/screen.css">
+    
+    
+      
+      <link rel="stylesheet" href="styles.css">
+      
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="/home/diego/.virtualenvs/landslide/src/landstile/src/landslide/themes/default/js/slides.js"></script>
+    
+    
+      
+      <script type="text/javascript" src="conf.js"></script>
+      
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+      
+      <!-- slide source: slides/01_introduccion.md -->
+      <div class="slide-wrapper">
+        <div class="slide fullimage">
+          <div class="inner">
+            
+            <header><h1>SCV casero</h1></header>
+            
+            
+            <section><p><img alt="" src="slides/images/humor_montt.jpg" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/01_introduccion.md">slides/01_introduccion.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/6
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source:  -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="page_number">
+              /6
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/02_definiciones.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Terminología</h1></header>
+            
+            
+            <section><p>Repository (repositorio)</p>
+<p>Working copy (Copia de trabajo)</p>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <p>La copia de trabajo es la copia local de los ficheros de un repositorio, en un momento del tiempo o revisión específicos.
+Todo el trabajo realizado sobre los ficheros en un repositorio se realiza inicialmente sobre una copia de trabajo, de ahí su nombre.
+Conceptualmente, es un cajón de arena o sandbox.
+Versión determinada de la información que se gestiona.
+Hay sistemas que identifican las revisiones con un contador. 
+Hay otros sistemas que identifican las revisiones mediante un código de detección de modificaciones (Ej. Git usa SHA1). 
+A la última versión se le suele identificar de forma especial con el nombre de HEAD. 
+Para poner especial a una revisión concreta se usan los rótulos o tags</p>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/02_definiciones.md">slides/02_definiciones.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/6
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/02_definiciones.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_notes">
+          <div class="inner">
+            
+            <header><h1>Terminología</h1></header>
+            
+            
+            <section><p>Trunk (tronco)</p>
+<p class="notes">La línea principal de desarrollo, donde se llevan a cabo los cambios menos complejos del día a día. Idealmente debería poder compilarse y pasar todas las pruebas en todo momento (ver Integración continua). La persona que rompa la compilación, debe ser públicamente humillada, y debe pagar una penitencia en donuts</p>
+<p>Branch (rama)</p>
+<p class="notes">Cuando se van a llevar a cabo cambios importantes que romperán la compilación, pruebas, experimentos o intentos de optimización, debe crearse una nueva rama de desarrollo, con la que no molestemos a los compañeros, esto es un branch: una copia del código o la rama de la que deriva. En esta copia haremos nuestros cambios, integraremos los arreglos que puedan haberse ido haciendo en el trunk, y, una vez terminado el desarrollo en la rama, integraremos (o no) los cambios en el trunk. También puede crearse una rama para una versión terminada, hacer mantenimiento de esta versión sobre esta rama, y continuar el desarrollo de la nueva versión en el trunk.</p>
+<p>Tag (etiqueta)</p>
+<p class="notes">Etiquetas que sirven para identificar un cierto momento en el desarrollo que queremos preservar. Se utilizan habitualmente para marcar cambios de versión (alfas, betas, RC, RTM) y puntos de interés. Sobre un tag no se puede / no se debe hacer cambios</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/02_definiciones.md">slides/02_definiciones.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/6
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/02_definiciones.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_notes">
+          <div class="inner">
+            
+            <header><h1>Terminología</h1></header>
+            
+            
+            <section><p>Checkout (desplegar)</p>
+<p class="notes">    Un despliegue crea una copia de trabajo local desde el repositorio. Se puede especificar una revisión concreta, y por defecto se suele obtener la última.</p>
+<p>Commit (cometer)</p>
+<p class="notes">    Un commit sucede cuando una copia de los cambios hechos a una copia local es escrita o integrada sobre repositorio.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/02_definiciones.md">slides/02_definiciones.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/6
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/02_definiciones.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_notes">
+          <div class="inner">
+            
+            <header><h1>Terminología</h1></header>
+            
+            
+            <section><p>Version</p>
+<p>Change (cambio)</p>
+<p class="notes">    Un cambio representa una modificación específica a un documento bajo control de versiones. La granularidad de la modificación considerada un cambio varía entre diferentes sistemas de control de versiones.</p>
+<p>Changelist (Lista de cambios)</p>
+<p class="notes">    En muchos sistemas de control de versiones con commits multi-cambio atómicos, una lista de cambios identifica el conjunto de cambios hechos en un único commit. Esto también puede representar una vista secuencial del código fuente, permitiendo que el fuente sea examinado a partir de cualquier identificador de lista de cambios particular.</p>
+<p>Merge (integración o fusión)</p>
+<p class="notes">    Una integración o fusión une dos conjuntos de cambios sobre un fichero o un conjunto de ficheros en una revisión unificada de dicho fichero o ficheros.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/02_definiciones.md">slides/02_definiciones.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/6
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/99_creditos.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Fuentes</h1></header>
+            
+            
+            <section><ul>
+<li>http://es.wikipedia.org/wiki/Control_de_versiones</li>
+<li>http://www.blog.sergiorus.com/post/968247237/git-sistema-de-control-de-versiones-distribuido</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/99_creditos.md">slides/99_creditos.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/6
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source:  -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="page_number">
+              /6
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+      
+      <tr id="toc-row-1">
+        <th><a href="#slide1">SCV casero</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-2">
+        <th><a href="#slide2">Terminología</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">Terminología</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Terminología</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide5">Terminología</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Fuentes</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Full screen slides</th>
+        <td>e</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Toggle screen blanking</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Show/hide slide context</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>
