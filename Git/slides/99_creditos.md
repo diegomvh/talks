@@ -4,3 +4,5 @@
 * http://www.blog.sergiorus.com/post/968247237/git-sistema-de-control-de-versiones-distribuido
 
 ---
+
+.qr: 450|https://github.com/diegomvh/slideshows/tree/master/Git
