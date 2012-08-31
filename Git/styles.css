@@ -1,0 +1,16 @@
+div.slide.fullimage section {
+  text-align: center;
+}
+
+div.slide.fullimage li {
+  text-align: left;
+}
+
+div.slide.fullimage img {
+  max-width: 96%;
+  max-height: 78%;
+  border-radius: 4px;
+  /*-moz-box-shadow: 0px 7px 15px #aaa;
+  -webkit-box-shadow: 0px 7px 15px #aaa;
+  box-shadow: 0px 7px 15px #aaa;*/
+}
