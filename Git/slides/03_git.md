@@ -38,5 +38,10 @@ Desventajas
 * Número comandos
 * Significado comandos (usuarios subversion)
 
+---
 
+Cheat Sheet
+===========
 
+<iframe src="http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png" name="CheatSheet" width="100%" height="560" scrolling="auto" frameborder="0">
+<p>http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png</p></iframe>
