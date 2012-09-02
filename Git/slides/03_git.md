@@ -40,6 +40,63 @@ Desventajas
 
 ---
 
+Comandos
+========
+
+Local Commands
+--------------
+
+* git config
+* git init
+* **git add**
+* **git commit**
+* **git status**
+* git tag
+* git log
+
+Branchy Commands
+----------------
+
+* **git checkout**
+* **git branch**
+* **git merge**
+* git rebase
+
+Remotey Commands
+----------------
+
+* git remote
+* **git fetch**
+* **git pull**
+* **git clone**
+* **git push**
+
+Patchy Commands
+---------------
+
+* git diff
+* git apply
+* git format-patch
+* git am
+
+---
+
+Estructura y flujos
+===================
+
+.fx: fullimage
+
+![](images/220px-Git_data_flow_simplified.png)
+
+---
+
+Branching
+=========
+
+> En Git es común trabajar con múltiples ramas.
+
+---
+
 Cheat Sheet
 ===========
 
