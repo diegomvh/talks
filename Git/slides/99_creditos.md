@@ -1,3 +1,17 @@
+Sofware
+=======
+
+Linux
+-----
+
+
+Window
+------
+
+* GitExtensions
+
+---
+
 Fuentes
 =======
 
