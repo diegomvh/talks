@@ -7,6 +7,12 @@ Fuentes
 * http://git-scm.com/book
 * http://www.blog.sergiorus.com/post/968247237/git-sistema-de-control-de-versiones-distribuido
 * http://byte.kde.org/~zrusin/git/
+* http://www.slideshare.net/chacon/getting-git
+
+Video
+-----
+
+* http://www.slideshare.net/chacon/getting-git
 
 ---
 
