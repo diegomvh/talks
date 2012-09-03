@@ -17,7 +17,7 @@ en un momento dado de su desarrollo o modificación.
 
 # Control de versiones manual
 
-.fx: fullimage
+.fx: fullimage adjustwidth
 
 ![](images/humor_montt.jpg)
 
@@ -77,7 +77,7 @@ Cuando se comienza a usar un SCV se tiene la sensación de "Como pude trabajar a
 
 # Algunos SCV
 
-.fx: fullimage
+.fx: fullimage adjustwidth
 
 ![](images/scvs.jpg)
 
@@ -102,7 +102,7 @@ Cuando se comienza a usar un SCV se tiene la sensación de "Como pude trabajar a
 
 # Centralizados
 
-.fx: fullimage
+.fx: fullimage adjustheight
 
 ![](images/18333fig0102-tn.png)
 

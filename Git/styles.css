@@ -88,12 +88,15 @@ div.slide.fullimage li {
 }
 
 div.slide.fullimage img {
-  max-width: 96%;
-  max-height: 78%;
   border-radius: 4px;
-  /*-moz-box-shadow: 0px 7px 15px #aaa;
--webkit-box-shadow: 0px 7px 15px #aaa;
-box-shadow: 0px 7px 15px #aaa;*/
+}
+
+div.slide.adjustwidth img {
+  width: 96%;
+}
+
+div.slide.adjustheight img {
+  height: 78%;
 }
 
 div.slide p.cite {

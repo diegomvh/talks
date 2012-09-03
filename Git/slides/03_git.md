@@ -19,6 +19,8 @@ High performance
 Ventajas
 ========
 
+.fx: bigbullet
+
 * Distribuido
 * Rápido
 * Eficiente (branches)
@@ -34,6 +36,8 @@ Ventajas
 Desventajas
 =========== 
 
+.fx: bigbullet
+
 * Curva de aprendizaje
 * Número comandos
 * Significado comandos (usuarios subversion)
@@ -43,48 +47,50 @@ Desventajas
 Comandos
 ========
 
-Local Commands
---------------
+<div style="float: left; width:50%">
+<h2>Local Commands</h2>
+<ul>
+<li>git config</li>
+<li>git init</li>
+<li><strong>git add</strong></li>
+<li><strong>git commit</strong></li>
+<li><strong>git status</strong></li>
+<li>git tag</li>
+<li>git log</li>
+</ul>
+<h2>Branchy Commands</h2>
+<ul>
+<li><strong>git checkout</strong></li>
+<li><strong>git branch</strong></li>
+<li><strong>git merge</strong></li>
+<li>git rebase</li>
+</ul>
+</div>
 
-* git config
-* git init
-* **git add**
-* **git commit**
-* **git status**
-* git tag
-* git log
-
-Branchy Commands
-----------------
-
-* **git checkout**
-* **git branch**
-* **git merge**
-* git rebase
-
-Remotey Commands
-----------------
-
-* git remote
-* **git fetch**
-* **git pull**
-* **git clone**
-* **git push**
-
-Patchy Commands
----------------
-
-* git diff
-* git apply
-* git format-patch
-* git am
+<div style="float: right; width:50%">
+<h2>Remotey Commands</h2>
+<ul>
+<li>git remote</li>
+<li><strong>git fetch</strong></li>
+<li><strong>git pull</strong></li>
+<li><strong>git clone</strong></li>
+<li><strong>git push</strong></li>
+</ul>
+<h2>Patchy Commands</h2>
+<ul>
+<li>git diff</li>
+<li>git apply</li>
+<li>git format-patch</li>
+<li>git am</li>
+</ul>
+</div>
 
 ---
 
 Estructura y flujos
 ===================
 
-.fx: fullimage
+.fx: fullimage adjustheight
 
 ![](images/220px-Git_data_flow_simplified.png)
 
