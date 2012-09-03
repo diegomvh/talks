@@ -6,8 +6,10 @@ Fuentes
 * http://es.wikipedia.org/wiki/Control_de_versiones
 * http://git-scm.com/book
 * http://www.blog.sergiorus.com/post/968247237/git-sistema-de-control-de-versiones-distribuido
+* http://byte.kde.org/~zrusin/git/
 
 ---
+
 Filminas
 ========
 

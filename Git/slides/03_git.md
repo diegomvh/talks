@@ -6,7 +6,7 @@ GIT
 > Sistema de control de versiones distribuido, diseñado y desarrollado por Linus Torvalds para el kernel Linux.
 
 "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."
-<p class="cite">— <a href="http://wikipedia.org/">Linus Torvalds</a></p>
+<p class="cite">— <a href="https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27git.27_name.3F">Linus Torvalds</a></p>
 
 # Presenter Notes
 
@@ -28,8 +28,13 @@ Ventajas
 * Flexible
 * Local
 * Pequeño
-* Limpio (.svn)
+* Limpio (solo .git)
 * GitHub
+
+# Presenter Notes
+
+Cada programador tiene una copia local del historial del desarrollo
+Renombrado trabajado por similitudes
 
 ---
 
@@ -101,10 +106,39 @@ Branching
 
 > En Git es común trabajar con múltiples ramas.
 
+Convención
+----------
+
+![](images/convention.png)
+
+# Presenter Notes
+
+Fuerte apoyo al desarrollo no lineal, es rápido y eficiente en el manejo de ramas
+Cuando iniciamos un repositiorio estamos en la rama master, es fasil saltar de rama en rama como un mono,
+->hay una convención básica como para trabajar
+
+---
+
+Doit
+====
+
+.fx: centerquote
+
+> Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprendí.
+
+<p class="cite">— <a href="http://es.wikiquote.org/wiki/Confucio">Confucio</a></p>
+
+
+# Presenter Notes
+
+Por lo menos vamos a intentar hasta verlo :)
+Hacer un init, agregar archivos
+
 ---
 
 Cheat Sheet
 ===========
 
-<iframe src="http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png" name="CheatSheet" width="100%" height="560" scrolling="auto" frameborder="0">
-<p>http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png</p></iframe>
+.fx: fullimage adjustheight
+
+![](http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png)

@@ -90,7 +90,7 @@ en un momento dado de su desarrollo o modificación.
             </aside>
             
             <aside class="page_number">
-              1/20
+              1/21
             </aside>
           </footer>
         </div>
@@ -124,7 +124,7 @@ sistemas de control de versiones o SVC (del inglés System Version Control).</p>
             </aside>
             
             <aside class="page_number">
-              2/20
+              2/21
             </aside>
           </footer>
         </div>
@@ -160,7 +160,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              3/20
+              3/21
             </aside>
           </footer>
         </div>
@@ -198,7 +198,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              4/20
+              4/21
             </aside>
           </footer>
         </div>
@@ -240,7 +240,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              5/20
+              5/21
             </aside>
           </footer>
         </div>
@@ -270,7 +270,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              6/20
+              6/21
             </aside>
           </footer>
         </div>
@@ -301,12 +301,17 @@ así como las posibles especializaciones realizadas.</p>
 <li>Distribuidos</li>
 </ul>
 </li>
-</ul></section>
+</ul>
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <p>Forma en que los usuarios aportan sus cambios luego de obtener el repositorio, exclusiva bloqueando, colaborativa cambiando y resolviendo conflictos
+Desventaja del flujo centralizado es que solo el primer desarrollador podrá comprometer sus cambios el otro tendrá que hacer merge y quizá resolver conflictos
+Realizar petición para subir cambios a los repositorios gestionados por otros desarroladores</p>
             
             </section>
           </div>
@@ -317,7 +322,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              7/20
+              7/21
             </aside>
           </footer>
         </div>
@@ -331,12 +336,15 @@ así como las posibles especializaciones realizadas.</p>
             <header><h1>Centralizados</h1></header>
             
             
-            <section><p><img alt="" src="slides/images/18333fig0102-tn.png" /></p></section>
+            <section><p><img alt="" src="slides/images/18333fig0102-tn.png" /></p>
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <p>Ventajas tener centralizado todo lo que se esta haciendo con el proyecto, se puede llevar una numeración de las versiones</p>
             
             </section>
           </div>
@@ -347,7 +355,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              8/20
+              8/21
             </aside>
           </footer>
         </div>
@@ -361,12 +369,16 @@ así como las posibles especializaciones realizadas.</p>
             <header><h1>Distribuidos</h1></header>
             
             
-            <section><p><img alt="" src="slides/images/18333fig0103-tn.png" /></p></section>
+            <section><p><img alt="" src="slides/images/18333fig0103-tn.png" /></p>
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <p>No hace falta estar conectado, mayor autonomia
+La información esta en todos los desarrolladores, es resistente a caidas, no suele hacer falta backups</p>
             
             </section>
           </div>
@@ -377,7 +389,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              9/20
+              9/21
             </aside>
           </footer>
         </div>
@@ -418,24 +430,10 @@ así como las posibles especializaciones realizadas.</p>
             <header><h1>Presenter Notes</h1></header>
             <section>
             
-              <p>La copia de trabajo es la copia local de los ficheros de un repositorio, en un momento del tiempo o revisión específicos.
-Todo el trabajo realizado sobre los ficheros en un repositorio se realiza inicialmente sobre una copia de trabajo, de ahí su nombre.
-Conceptualmente, es un cajón de arena o sandbox.
-Versión determinada de la información que se gestiona.
-Hay sistemas que identifican las revisiones con un contador. 
-Hay otros sistemas que identifican las revisiones mediante un código de detección de modificaciones (Ej. Git usa SHA1). 
-A la última versión se le suele identificar de forma especial con el nombre de HEAD. 
-Para poner especial a una revisión concreta se usan los rótulos o tags
-La línea principal de desarrollo, donde se llevan a cabo los cambios menos complejos del día a día. Idealmente debería poder compilarse y pasar todas las pruebas en todo momento (ver Integración continua). La persona que rompa la compilación, debe ser públicamente humillada, y debe pagar una penitencia en donuts
-Cuando se van a llevar a cabo cambios importantes que romperán la compilación, pruebas, experimentos o intentos de optimización, debe crearse una nueva rama de desarrollo, con la que no molestemos a los compañeros, esto es un branch: una copia del código o la rama de la que deriva. En esta copia haremos nuestros cambios, integraremos los arreglos que puedan haberse ido haciendo en el trunk, y, una vez terminado el desarrollo en la rama, integraremos (o no) los cambios en el trunk. También puede crearse una rama para una versión terminada, hacer mantenimiento de esta versión sobre esta rama, y continuar el desarrollo de la nueva versión en el trunk.
-Etiquetas que sirven para identificar un cierto momento en el desarrollo que queremos preservar. Se utilizan habitualmente para marcar cambios de versión (alfas, betas, RC, RTM) y puntos de interés. Sobre un tag no se puede / no se debe hacer cambios
-The latest version in a branch.
-Synonym for “tip”; the latest version in a branch. This term tends to be used more when you're talking about the trunk, “tip” more when you're talking about a non-trunk branch.
-Un despliegue crea una copia de trabajo local desde el repositorio. Se puede especificar una revisión concreta, y por defecto se suele obtener la última.
-Un commit sucede cuando una copia de los cambios hechos a una copia local es escrita o integrada sobre repositorio.
-Un cambio representa una modificación específica a un documento bajo control de versiones. La granularidad de la modificación considerada un cambio varía entre diferentes sistemas de control de versiones.
-En muchos sistemas de control de versiones con commits multi-cambio atómicos, una lista de cambios identifica el conjunto de cambios hechos en un único commit. Esto también puede representar una vista secuencial del código fuente, permitiendo que el fuente sea examinado a partir de cualquier identificador de lista de cambios particular.
-Una integración o fusión une dos conjuntos de cambios sobre un fichero o un conjunto de ficheros en una revisión unificada de dicho fichero o ficheros.</p>
+              <p>Tip es equivalente a tag pero se utiliza para los branches
+Stage es donde se agregan los archivos en git antes de hacer el commit
+Aclarar que Fork viene de la mano de GitHub
+Rebase similar a merge solo que intenta preservar la historia de la rama de manera lineal, mientras que merge genera ramificaciones</p>
             
             </section>
           </div>
@@ -446,7 +444,7 @@ Una integración o fusión une dos conjuntos de cambios sobre un fichero o un co
             </aside>
             
             <aside class="page_number">
-              10/20
+              10/21
             </aside>
           </footer>
         </div>
@@ -464,7 +462,7 @@ Una integración o fusión une dos conjuntos de cambios sobre un fichero o un co
 <p>Sistema de control de versiones distribuido, diseñado y desarrollado por Linus Torvalds para el kernel Linux.</p>
 </blockquote>
 <p>"I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."
-<p class="cite">— <a href="http://wikipedia.org/">Linus Torvalds</a></p></p>
+<p class="cite">— <a href="https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27git.27_name.3F">Linus Torvalds</a></p></p>
 </section>
             
           </div>
@@ -485,7 +483,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              11/20
+              11/21
             </aside>
           </footer>
         </div>
@@ -507,14 +505,18 @@ High performance</p>
 <li>Flexible</li>
 <li>Local</li>
 <li>Pequeño</li>
-<li>Limpio (.svn)</li>
+<li>Limpio (solo .git)</li>
 <li>GitHub</li>
-</ul></section>
+</ul>
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <p>Cada programador tiene una copia local del historial del desarrollo
+Renombrado trabajado por similitudes</p>
             
             </section>
           </div>
@@ -525,7 +527,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              12/20
+              12/21
             </aside>
           </footer>
         </div>
@@ -559,7 +561,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              13/20
+              13/21
             </aside>
           </footer>
         </div>
@@ -625,7 +627,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              14/20
+              14/21
             </aside>
           </footer>
         </div>
@@ -655,7 +657,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              15/20
+              15/21
             </aside>
           </footer>
         </div>
@@ -671,12 +673,19 @@ High performance</p>
             
             <section><blockquote>
 <p>En Git es común trabajar con múltiples ramas.</p>
-</blockquote></section>
+</blockquote>
+<h2>Convención</h2>
+<p><img alt="" src="slides/images/convention.png" /></p>
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <p>Fuerte apoyo al desarrollo no lineal, es rápido y eficiente en el manejo de ramas
+Cuando iniciamos un repositiorio estamos en la rama master, es fasil saltar de rama en rama como un mono,
+-&gt;hay una convención básica como para trabajar</p>
             
             </section>
           </div>
@@ -687,7 +696,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              16/20
+              16/21
             </aside>
           </footer>
         </div>
@@ -695,14 +704,51 @@ High performance</p>
       
       <!-- slide source: slides/03_git.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide centerquote">
+          <div class="inner">
+            
+            <header><h1>Doit</h1></header>
+            
+            
+            <section><blockquote>
+<p>Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprendí.</p>
+</blockquote>
+<p class="cite">— <a href="http://es.wikiquote.org/wiki/Confucio">Confucio</a></p>
+
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <p>Por lo menos vamos a intentar hasta verlo :)
+Hacer un init, agregar archivos</p>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/03_git.md">slides/03_git.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/03_git.md -->
+      <div class="slide-wrapper">
+        <div class="slide fullimage adjustheight">
           <div class="inner">
             
             <header><h1>Cheat Sheet</h1></header>
             
             
-            <section><iframe src="http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png" name="CheatSheet" width="100%" height="560" scrolling="auto" frameborder="0">
-<p>http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png</p></iframe></section>
+            <section><p><img alt="" src="http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -718,7 +764,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              17/20
+              18/21
             </aside>
           </footer>
         </div>
@@ -758,7 +804,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              18/20
+              19/21
             </aside>
           </footer>
         </div>
@@ -776,6 +822,7 @@ High performance</p>
 <li>http://es.wikipedia.org/wiki/Control_de_versiones</li>
 <li>http://git-scm.com/book</li>
 <li>http://www.blog.sergiorus.com/post/968247237/git-sistema-de-control-de-versiones-distribuido</li>
+<li>http://byte.kde.org/~zrusin/git/</li>
 </ul></section>
             
           </div>
@@ -792,7 +839,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              19/20
+              20/21
             </aside>
           </footer>
         </div>
@@ -822,7 +869,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              20/20
+              21/21
             </aside>
           </footer>
         </div>
@@ -933,26 +980,32 @@ High performance</p>
       
       
       <tr id="toc-row-17">
-        <th><a href="#slide17">Cheat Sheet</a></th>
+        <th><a href="#slide17">Doit</a></th>
         <td><a href="#slide17">17</a></td>
       </tr>
       
       
       <tr id="toc-row-18">
-        <th><a href="#slide18">GitHub</a></th>
+        <th><a href="#slide18">Cheat Sheet</a></th>
         <td><a href="#slide18">18</a></td>
       </tr>
       
       
       <tr id="toc-row-19">
-        <th><a href="#slide19">Fuentes</a></th>
+        <th><a href="#slide19">GitHub</a></th>
         <td><a href="#slide19">19</a></td>
       </tr>
       
       
       <tr id="toc-row-20">
-        <th><a href="#slide20">Filminas</a></th>
+        <th><a href="#slide20">Fuentes</a></th>
         <td><a href="#slide20">20</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-21">
+        <th><a href="#slide21">Filminas</a></th>
+        <td><a href="#slide21">21</a></td>
       </tr>
       
       

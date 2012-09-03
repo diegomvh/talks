@@ -1,4 +1,5 @@
-# Control de versiones
+Control de versiones
+====================
 
 .fx: centerquote
 
@@ -15,7 +16,8 @@ en un momento dado de su desarrollo o modificación.
 
 ---
 
-# Control de versiones manual
+Control de versiones manual
+===========================
 
 .fx: fullimage adjustwidth
 
@@ -28,7 +30,8 @@ sistemas de control de versiones o SVC (del inglés System Version Control).
 
 ---
 
-# Qué es un SCV?
+Qué es un SCV?
+==============
 
 .fx: centerquote
 
@@ -41,7 +44,8 @@ así como las posibles especializaciones realizadas.
 
 ---
 
-# Ventajas de un SCV
+Ventajas de un SCV
+==================
 
 .fx: bigbullet
 
@@ -56,7 +60,8 @@ así como las posibles especializaciones realizadas.
 
 ---
 
-# Cuando usar un SCV
+Cuando usar un SCV
+==================
 
 .fx: bigbullet
 
@@ -75,7 +80,8 @@ Cuando se comienza a usar un SCV se tiene la sensación de "Como pude trabajar a
 
 ---
 
-# Algunos SCV
+Algunos SCV
+===========
 
 .fx: fullimage adjustwidth
 
@@ -83,7 +89,8 @@ Cuando se comienza a usar un SCV se tiene la sensación de "Como pude trabajar a
 
 ---
 
-# Caracterización
+Caracterización
+===============
 
 .fx: bigbullet
 
@@ -98,18 +105,34 @@ Cuando se comienza a usar un SCV se tiene la sensación de "Como pude trabajar a
     * Centralizados
     * Distribuidos
 
+# Presenter Notes
+Forma en que los usuarios aportan sus cambios luego de obtener el repositorio, exclusiva bloqueando, colaborativa cambiando y resolviendo conflictos
+Desventaja del flujo centralizado es que solo el primer desarrollador podrá comprometer sus cambios el otro tendrá que hacer merge y quizá resolver conflictos
+Realizar petición para subir cambios a los repositorios gestionados por otros desarroladores
+
 ---
 
-# Centralizados
+Centralizados
+=============
 
 .fx: fullimage adjustheight
 
 ![](images/18333fig0102-tn.png)
 
+# Presenter Notes
+
+Ventajas tener centralizado todo lo que se esta haciendo con el proyecto, se puede llevar una numeración de las versiones
+
 ---
 
-# Distribuidos
+Distribuidos
+============
 
 .fx: fullimage
 
 ![](images/18333fig0103-tn.png)
+
+# Presenter Notes
+
+No hace falta estar conectado, mayor autonomia
+La información esta en todos los desarrolladores, es resistente a caidas, no suele hacer falta backups
