@@ -1,4 +1,4 @@
-slideshows
-==========
+Talks
+=====
 
-My Slideshows
+My Talks

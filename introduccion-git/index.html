@@ -90,7 +90,7 @@ en un momento dado de su desarrollo o modificación.
             </aside>
             
             <aside class="page_number">
-              1/21
+              1/23
             </aside>
           </footer>
         </div>
@@ -124,7 +124,7 @@ sistemas de control de versiones o SVC (del inglés System Version Control).</p>
             </aside>
             
             <aside class="page_number">
-              2/21
+              2/23
             </aside>
           </footer>
         </div>
@@ -160,7 +160,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              3/21
+              3/23
             </aside>
           </footer>
         </div>
@@ -198,7 +198,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              4/21
+              4/23
             </aside>
           </footer>
         </div>
@@ -240,7 +240,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              5/21
+              5/23
             </aside>
           </footer>
         </div>
@@ -270,7 +270,7 @@ así como las posibles especializaciones realizadas.</p>
             </aside>
             
             <aside class="page_number">
-              6/21
+              6/23
             </aside>
           </footer>
         </div>
@@ -322,7 +322,7 @@ Realizar petición para subir cambios a los repositorios gestionados por otros d
             </aside>
             
             <aside class="page_number">
-              7/21
+              7/23
             </aside>
           </footer>
         </div>
@@ -355,7 +355,7 @@ Realizar petición para subir cambios a los repositorios gestionados por otros d
             </aside>
             
             <aside class="page_number">
-              8/21
+              8/23
             </aside>
           </footer>
         </div>
@@ -389,7 +389,7 @@ La información esta en todos los desarrolladores, es resistente a caidas, no su
             </aside>
             
             <aside class="page_number">
-              9/21
+              9/23
             </aside>
           </footer>
         </div>
@@ -417,7 +417,7 @@ La información esta en todos los desarrolladores, es resistente a caidas, no su
 <p class="notes">Dependiendo del SCV pueden encontrarse en distintas partes</p>
 <h2>Acciones</h2>
 <ul>
-<li>Checkout, Commit, Export, Import</li>
+<li>Commit, Checkout, Export, Import</li>
 <li>Conflict, Resolve, Merge, Rebase</li>
 <li>Cherry Pick, Revert, Stash, Patch</li>
 <li>Fork, Clone, Push, Pull</li>
@@ -433,7 +433,9 @@ La información esta en todos los desarrolladores, es resistente a caidas, no su
               <p>Tip es equivalente a tag pero se utiliza para los branches
 Stage es donde se agregan los archivos en git antes de hacer el commit
 Aclarar que Fork viene de la mano de GitHub
-Rebase similar a merge solo que intenta preservar la historia de la rama de manera lineal, mientras que merge genera ramificaciones</p>
+Rebase similar a merge solo que intenta preservar la historia de la rama de manera lineal, mientras que merge genera ramificaciones
+Cada commit al repositorio debe estar bien documentado, es una recomendación de buenas prácticas de desarrollo.
+Las ramas son bifurcaciones que permiten desarrollar diferentes partes de un software en paralelo, facilitan el aislar los cambios</p>
             
             </section>
           </div>
@@ -444,7 +446,7 @@ Rebase similar a merge solo que intenta preservar la historia de la rama de mane
             </aside>
             
             <aside class="page_number">
-              10/21
+              10/23
             </aside>
           </footer>
         </div>
@@ -483,7 +485,7 @@ High performance</p>
             </aside>
             
             <aside class="page_number">
-              11/21
+              11/23
             </aside>
           </footer>
         </div>
@@ -527,7 +529,7 @@ Renombrado trabajado por similitudes</p>
             </aside>
             
             <aside class="page_number">
-              12/21
+              12/23
             </aside>
           </footer>
         </div>
@@ -561,7 +563,7 @@ Renombrado trabajado por similitudes</p>
             </aside>
             
             <aside class="page_number">
-              13/21
+              13/23
             </aside>
           </footer>
         </div>
@@ -627,7 +629,40 @@ Renombrado trabajado por similitudes</p>
             </aside>
             
             <aside class="page_number">
-              14/21
+              14/23
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/03_git.md -->
+      <div class="slide-wrapper">
+        <div class="slide centerquote">
+          <div class="inner">
+            
+            <header><h1>Branching</h1></header>
+            
+            
+            <section><blockquote>
+<p>En Git es común trabajar con múltiples ramas.</p>
+</blockquote>
+<p>La facilidad de git para el uso de ramas nos permite bifurcar una versión concreta del proyecto para empezar a trabajar en una nueva característica, o un bug que haya que solucionar.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/03_git.md">slides/03_git.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/23
             </aside>
           </footer>
         </div>
@@ -657,7 +692,7 @@ Renombrado trabajado por similitudes</p>
             </aside>
             
             <aside class="page_number">
-              15/21
+              16/23
             </aside>
           </footer>
         </div>
@@ -668,14 +703,10 @@ Renombrado trabajado por similitudes</p>
         <div class="slide">
           <div class="inner">
             
-            <header><h1>Branching</h1></header>
+            <header><h1>Convención</h1></header>
             
             
-            <section><blockquote>
-<p>En Git es común trabajar con múltiples ramas.</p>
-</blockquote>
-<h2>Convención</h2>
-<p><img alt="" src="slides/images/convention.png" /></p>
+            <section><p><img alt="" src="slides/images/convention.png" /></p>
 </section>
             
           </div>
@@ -696,7 +727,7 @@ Cuando iniciamos un repositiorio estamos en la rama master, es fasil saltar de r
             </aside>
             
             <aside class="page_number">
-              16/21
+              17/23
             </aside>
           </footer>
         </div>
@@ -734,7 +765,7 @@ Hacer un init, agregar archivos</p>
             </aside>
             
             <aside class="page_number">
-              17/21
+              18/23
             </aside>
           </footer>
         </div>
@@ -764,7 +795,7 @@ Hacer un init, agregar archivos</p>
             </aside>
             
             <aside class="page_number">
-              18/21
+              19/23
             </aside>
           </footer>
         </div>
@@ -804,7 +835,49 @@ Hacer un init, agregar archivos</p>
             </aside>
             
             <aside class="page_number">
-              19/21
+              20/23
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/99_creditos.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Sofware</h1></header>
+            
+            
+            <section><h2>Linux</h2>
+<ul>
+<li>apt-get install git-core</li>
+</ul>
+<h2>Window</h2>
+<ul>
+<li>http://code.google.com/p/msysgit</li>
+<li>Git Extensions (https://github.com/gitextensions/gitextensions)</li>
+</ul>
+<h2>Mac</h2>
+<ul>
+<li>http://code.google.com/p/git-osx-installer</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/99_creditos.md">slides/99_creditos.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              21/23
             </aside>
           </footer>
         </div>
@@ -844,7 +917,7 @@ Hacer un init, agregar archivos</p>
             </aside>
             
             <aside class="page_number">
-              20/21
+              22/23
             </aside>
           </footer>
         </div>
@@ -874,7 +947,7 @@ Hacer un init, agregar archivos</p>
             </aside>
             
             <aside class="page_number">
-              21/21
+              23/23
             </aside>
           </footer>
         </div>
@@ -973,44 +1046,56 @@ Hacer un init, agregar archivos</p>
       
       
       <tr id="toc-row-15">
-        <th><a href="#slide15">Estructura y flujos</a></th>
+        <th><a href="#slide15">Branching</a></th>
         <td><a href="#slide15">15</a></td>
       </tr>
       
       
       <tr id="toc-row-16">
-        <th><a href="#slide16">Branching</a></th>
+        <th><a href="#slide16">Estructura y flujos</a></th>
         <td><a href="#slide16">16</a></td>
       </tr>
       
       
       <tr id="toc-row-17">
-        <th><a href="#slide17">Doit</a></th>
+        <th><a href="#slide17">Convención</a></th>
         <td><a href="#slide17">17</a></td>
       </tr>
       
       
       <tr id="toc-row-18">
-        <th><a href="#slide18">Cheat Sheet</a></th>
+        <th><a href="#slide18">Doit</a></th>
         <td><a href="#slide18">18</a></td>
       </tr>
       
       
       <tr id="toc-row-19">
-        <th><a href="#slide19">GitHub</a></th>
+        <th><a href="#slide19">Cheat Sheet</a></th>
         <td><a href="#slide19">19</a></td>
       </tr>
       
       
       <tr id="toc-row-20">
-        <th><a href="#slide20">Fuentes</a></th>
+        <th><a href="#slide20">GitHub</a></th>
         <td><a href="#slide20">20</a></td>
       </tr>
       
       
       <tr id="toc-row-21">
-        <th><a href="#slide21">Filminas</a></th>
+        <th><a href="#slide21">Sofware</a></th>
         <td><a href="#slide21">21</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-22">
+        <th><a href="#slide22">Fuentes</a></th>
+        <td><a href="#slide22">22</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-23">
+        <th><a href="#slide23">Filminas</a></th>
+        <td><a href="#slide23">23</a></td>
       </tr>
       
       

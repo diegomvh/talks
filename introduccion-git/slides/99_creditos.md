@@ -4,11 +4,18 @@ Sofware
 Linux
 -----
 
+* apt-get install git-core
 
 Window
 ------
 
-* GitExtensions
+* http://code.google.com/p/msysgit
+* Git Extensions (https://github.com/gitextensions/gitextensions)
+
+Mac
+---
+
+* http://code.google.com/p/git-osx-installer
 
 ---
 

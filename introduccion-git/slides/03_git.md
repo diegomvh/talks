@@ -95,6 +95,8 @@ Comandos
 Branching
 =========
 
+.fx: centerquote
+
 > En Git es común trabajar con múltiples ramas.
 
 La facilidad de git para el uso de ramas nos permite bifurcar una versión concreta del proyecto para empezar a trabajar en una nueva característica, o un bug que haya que solucionar.
