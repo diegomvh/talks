@@ -15,5 +15,4 @@ Los créditos son para
 
 * [Fisa Talks](https://github.com/fisadev/talks)
 * [Curso Python Cientifico](https://github.com/mgaitan/curso-python-cientifico)
-* [El tutorial de Python](http://docs.python.org.ar/tutorial)
-  traducción al castellano por la comunidad [Python Argentina](http://python.org.ar/)
+* [El tutorial de Python](http://docs.python.org.ar/tutorial) traducción al castellano por la comunidad [Python Argentina](http://python.org.ar/)
